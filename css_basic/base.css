@@ -1,0 +1,10 @@
+body.works_on_smartphone {
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  }
+  

@@ -5,6 +5,10 @@ body {
     height: 100vh; 
     margin: 0;
   }
+  body.works_on_smartphone {
+    flex-direction: column;
+  }
+
   header {
     background-color: #1e90ff; /* Blue background */
     padding: 15px 30px;
@@ -65,5 +69,10 @@ body {
     background-color: #f0afaf;
     padding: 10px;
     text-align: center;
+  }
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
   }
   
