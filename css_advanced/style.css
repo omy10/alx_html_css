@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  body {
+    /* background-color: #000; */
+    color: white;
+    text-align: center;
+  }
+  /* HEADER STYLING */
+.main-header {
+    background: transparent;
+    padding: 20px 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-right: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #c271ff;
+  }
+  
+  /* REGISTER BUTTON */
+  .register-btn {
+    background: #c271ff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* HERO SECTION */
+  .hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #0b0b1f),
+                url('../css_advanced/assets/Object.png') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .sub-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    border: none;
+    background: #c271ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #a44ed6;
+  }
+  
+  /* PROS SECTION */
+  .pros {
+    background: linear-gradient(to top, #071028, #0b0b1f);
+    padding: 60px 20px;
+  }
+  
+  .pros h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .highlight {
+    color: #c271ff;
+  }
+  
+  .pro-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .card {
+    width: 150px;
+    text-align: center;
+    color: white;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  /* TESTIMONIAL SECTION */
+.testimonial {
+    background-color: #c271ff;
+    color: white;
+    padding: 60px 20px;
+  }
+  
+  .testimonial-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+  }
+  
+  .testimonial-text {
+    max-width: 600px;
+  }
+  
+  .testimonial-text .quote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text .name {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .testimonial-text .title {
+    font-style: italic;
+    color: #eee;
+    font-size: 0.95rem;
+  }
+  .section-title {
+    font-size: 2.25rem; /* Equivalent to text-3xl */
+    line-height: 2.5rem; /* Equivalent to leading-9 */
+    font-weight: 600; /* Equivalent to font-semibold */
+    text-align: center;
+    color: #1f2937; /* Equivalent to text-gray-800 */
+    margin-bottom: 3rem; /* Equivalent to mb-12 */
+}
+
+/* Span for the purple text in title */
+.section-title .highlight {
+    color: #9333ea; /* Equivalent to text-purple-600 */
+}
+
+.section-title {
+    font-size: 2.25rem; /* Equivalent to text-3xl */
+    line-height: 2.5rem; /* Equivalent to leading-9 */
+    font-weight: 600; /* Equivalent to font-semibold */
+    text-align: center;
+    color: #1f2937; /* Equivalent to text-gray-800 */
+    margin-bottom: 3rem; /* Equivalent to mb-12 */
+}
+
+/* Span for the purple text in title */
+.section-title .highlight {
+    color: #9333ea; /* Equivalent to text-purple-600 */
+}
+
+/* Tutorial Cards Grid */
+.tutorial-cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Responsive grid for small screens (sm:grid-cols-2) */
+/* @media (min-width: 640px) {
+    .tutorial-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive grid for large screens (lg:grid-cols-4) */
+/* @media (min-width: 1024px) {
+    .tutorial-cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */ */
+
+/* Individual Card Styles */
+.card {
+    /* background-color: #ffffff; /* Equivalent to bg-white */
+    /* Equivalent to rounded-lg */
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); Equivalent to shadow-md */
+    width: 150px;
+    text-align: center;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Equivalent to hover:scale-105 */
+}
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%; /* Equivalent to w-full */
+     /* Equivalent to h-48 */
+    /* background-color: #e5e7eb; Equivalent to bg-gray-200 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image {
+    width: 100%; /* Equivalent to w-full */
+    object-fit: cover; /* Equivalent to object-cover */
+
+}
+
+/* Play Button Overlay (using image) */
+.play-button-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px; /* Size of the play button image */
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 9999px; /* Make it circular if the image itself isn't */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background-color: rgba(255, 255, 255, 0.7); /* Background for transparency */
+}
+.play-button-img:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Card Content Area */
+.card-content {
+    padding: 1.5rem; /* Equivalent to p-6 */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    line-height: 1.75rem; /* Equivalent to leading-7 */
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #111827; /* Equivalent to text-gray-900 */
+    margin-bottom: 0.5rem; /* Equivalent to mb-2 */
+}
+
+.card-description {
+    color: #4b5563; /* Equivalent to text-gray-600 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    line-height: 1.25rem; /* Equivalent to leading-5 */
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+}
+
+.author-avatar {
+    width: 2.5rem; /* Equivalent to w-10 */
+    height: 2.5rem; /* Equivalent to h-10 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    margin-right: 0.75rem; /* Equivalent to mr-3 */
+    border: 2px solid #a855f7; /* Equivalent to border-2 border-purple-500 */
+}
+
+.author-name {
+    color: #9333ea; /* Equivalent to text-purple-600 */
+    font-weight: 500; /* Equivalent to font-medium */
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6b7280; /* Equivalent to text-gray-500 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    line-height: 1.25rem; /* Equivalent to leading-5 */
+}
+
+/* Star Rating (using images) */
+.star-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-rating .star-img {
+    width: 5px; /* Size of star images */
+    height: 5px;
+}
+
+.faq-container {
+   
+    padding: 4rem 1.5rem; /* Padding top/bottom and left/right */
+    box-sizing: border-box;
+}
+.membership-container {
+    padding: 4rem 1.5rem; /* Padding top/bottom and left/right */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #071028;
+}
+
+/* Section Title */
+.membership-title {
+    font-size: 2.5rem; /* Large font size for title */
+    font-weight: 700; /* Bold font weight */
+    text-align: center;
+    color: #9333ea; /* Purple color for the title */
+    margin-bottom: 4rem; /* Spacing below the title */
+}
+
+/* Membership Benefits Grid */
+.benefits-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center items horizontally */
+    gap: 2rem; /* Space between benefit items */
+    margin-bottom: 4rem; /* Space above the button */
+}
+
+/* Individual Benefit Item */
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    width: 100%; /* Full width on smallest screens */
+    max-width: 250px; /* Max width for each item to maintain spacing */
+}
+
+/* Responsive adjustments for benefit items */
+@media (min-width: 640px) {
+    .benefit-item {
+        width: calc(50% - 1rem); /* Two columns on small screens, accounting for gap */
+    }
+}
+
+@media (min-width: 1024px) {
+    .benefit-item {
+        width: calc(25% - 1.5rem); /* Four columns on large screens, accounting for gap */
+    }
+}
+
+/* Smile SVG Icon */
+.smile-image {
+    width: 80px; /* Size of the smile icon */
+    height: 80px;
+    fill: #9333ea; /* Purple color for the icon */
+    margin-bottom: 1.5rem; /* Space below the icon */
+}
+
+/* Benefit Title (Lorem ipsum) */
+.benefit-heading {
+    font-size: 1.25rem; /* Larger font size for the heading */
+    font-weight: 600; /* Bold font weight */
+    color: #ffffff; /* White color */
+    margin-bottom: 0.5rem; /* Space below the heading */
+}
+
+/* Benefit Description */
+.benefit-description {
+    font-size: 0.95rem; /* Smaller font size for description */
+    line-height: 1.5; /* Good line height for readability */
+    color: #cccccc; /* Light gray color */
+}
+
+/* Register Button */
+.register-button {
+    background-color: #9333ea; /* Purple background color */
+    color: #ffffff; /* White text color */
+    padding: 1rem 2.5rem; /* Vertical and horizontal padding */
+    border: none;
+    border-radius: 9999px; /* Fully rounded button */
+    font-size: 1.125rem; /* Larger font size */
+    font-weight: 600; /* Semi-bold font weight */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.register-button:hover {
+    background-color: #a855f7; /* Slightly lighter purple on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Main Section Title */
+.main-faq-title {
+    font-size: 14px; /* Large font size for F.A.Q. */
+    font-weight: 400; /* Lighter font weight */
+    text-align: center;
+    color: #e0e0e0; /* Light gray color */
+    margin-bottom: 5rem; /* Spacing below the title */
+    letter-spacing: 0px; /* Add some letter spacing */
+    line-height: 24px;
+}
+
+/* FAQ Content Grid */
+.faq-content-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 3rem 4rem; /* Gap between rows and columns */
+}
+
+/* Responsive grid for larger screens */
+@media (min-width: 768px) {
+    .faq-content-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens and up */
+    }
+}
+
+/* Individual FAQ Item */
+.faq-item {
+    margin-bottom: 2rem; /* Space between FAQ items in a column */
+}
+
+.faq-item:last-child {
+    margin-bottom: 0; /* No bottom margin for the last item */
+}
+
+.faq-question {
+    font-size: 16px; /* Size for the question text */
+    font-weight: 700; /* Medium font weight */
+    color: rgba(7, 22, 41, 1); /* Light text color */
+    margin-bottom: 1rem; /* Space below the question */
+}
+
+.faq-answer {
+    font-size: 0.95rem; /* Slightly smaller text for the answer */
+    line-height: 1.6; /* Good line height for readability */
+    color: rgba(7, 22, 41, 0.5); /* Slightly darker light text color */
+    opacity: 0.9; /* Slightly transparent to match image */
+}
+/* Footer Container */
+.site-footer {
+    background-color: #071629; /* Dark background color of the footer */
+    color: #e0e0e0; /* Light text color */
+    padding: 2.5rem 1.5rem; /* Vertical and horizontal padding */
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* Inner Footer Content Wrapper */
+.footer-content-wrapper {
+    max-width: 1200px; /* Max width to center content */
+    margin: 0 auto; /* Center the content */
+    display: flex;
+    justify-content: space-between; /* Space out logo and social icons */
+    align-items: center; /* Vertically align items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Logo Section */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem; /* Space below logo on smaller screens */
+}
+
+.footer-logo-img {
+    width: 40px; /* Adjust SVG width as needed */
+    height: 40px; /* Adjust SVG height as needed */
+    margin-right: 0.5rem; /* Space between SVG and text */
+    
+}
+
+.footer-logo-text {
+    font-size: 1.5rem; /* Font size for "Smile School" */
+    font-weight: 600; /* Bold font weight */
+    color: #e0e0e0; /* Light text color */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 1rem; /* Space between social icons */
+    margin-bottom: 1.5rem; /* Space below icons on smaller screens */
+}
+
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Width of the circular icon background */
+    height: 40px; /* Height of the circular icon background */
+    background-color: #333333; /* Dark background for icons */
+    border-radius: 50%; /* Make it circular */
+    color: #e0e0e0; /* Icon color */
+    font-size: 1.25rem; /* Size of the icon */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon-link:hover {
+    background-color: #555555; /* Slightly lighter background on hover */
+}
+
+/* Copyright Notice */
+.copyright {
+    width: 100%; /* Take full width */
+    text-align: center;
+    font-size: 0.875rem; /* Smaller font size for copyright */
+    color: #b0b0b0; /* Slightly lighter gray for copyright */
+    margin-top: 2rem; /* Space above the copyright text */
+    opacity: 0.8; /* Slightly transparent to match image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content-wrapper {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 1.5rem;
+        justify-content: center; /* Center logo on smaller screens */
+    }
+
+    .social-icons {
+        margin-bottom: 1.5rem;
+        justify-content: center; /* Center icons on smaller screens */
+        width: 100%; /* Take full width to center gap */
+    }
+}
+  
+  
