@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .site-footer {
     background-color: #071629; /* Dark background color of the footer */
     color: #e0e0e0; /* Light text color */
@@ -90,4 +91,98 @@
     }
 }
   
+=======
+.site-footer {
+    background-color: #071629; /* Dark background color of the footer */
+    color: #e0e0e0; /* Light text color */
+    padding: 2.5rem 1.5rem; /* Vertical and horizontal padding */
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* Inner Footer Content Wrapper */
+.footer-content-wrapper {
+    max-width: 1200px; /* Max width to center content */
+    margin: 0 auto; /* Center the content */
+    display: flex;
+    justify-content: space-between; /* Space out logo and social icons */
+    align-items: center; /* Vertically align items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Logo Section */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem; /* Space below logo on smaller screens */
+}
+
+.footer-logo-img {
+    width: 40px; /* Adjust SVG width as needed */
+    height: 40px; /* Adjust SVG height as needed */
+    margin-right: 0.5rem; /* Space between SVG and text */
+    
+}
+
+.footer-logo-text {
+    font-size: 1.5rem; /* Font size for "Smile School" */
+    font-weight: 600; /* Bold font weight */
+    color: #e0e0e0; /* Light text color */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 1rem; /* Space between social icons */
+    margin-bottom: 1.5rem; /* Space below icons on smaller screens */
+}
+
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Width of the circular icon background */
+    height: 40px; /* Height of the circular icon background */
+    background-color: #333333; /* Dark background for icons */
+    border-radius: 50%; /* Make it circular */
+    color: #e0e0e0; /* Icon color */
+    font-size: 1.25rem; /* Size of the icon */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon-link:hover {
+    background-color: #555555; /* Slightly lighter background on hover */
+}
+
+/* Copyright Notice */
+.copyright {
+    width: 100%; /* Take full width */
+    text-align: center;
+    font-size: 0.875rem; /* Smaller font size for copyright */
+    color: #b0b0b0; /* Slightly lighter gray for copyright */
+    margin-top: 2rem; /* Space above the copyright text */
+    opacity: 0.8; /* Slightly transparent to match image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content-wrapper {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 1.5rem;
+        justify-content: center; /* Center logo on smaller screens */
+    }
+
+    .social-icons {
+        margin-bottom: 1.5rem;
+        justify-content: center; /* Center icons on smaller screens */
+        width: 100%; /* Take full width to center gap */
+    }
+}
+  
+>>>>>>> 97354c3ef2c828d59724dbb990ddfd737d46dcf7
   

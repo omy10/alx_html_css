@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Base styling */
 body {
     margin: 0;
@@ -122,3 +123,129 @@ body {
         font-size: 0.9rem;
     }
 }
+=======
+/* Base styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.results {
+    background: url('../headphones/assets alx/images/headphones_hero_2.jpg') no-repeat center/cover;
+
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.results h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.results p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.card-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.image-text {
+    margin-bottom: 15px;
+}
+
+.image-text h2 {
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.image-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .card-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .results {
+        padding: 30px 10px;
+    }
+
+    .results h1 {
+        font-size: 1.5em;
+    }
+
+    .results p {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
+    .card-box {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .image-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+>>>>>>> 97354c3ef2c828d59724dbb990ddfd737d46dcf7
